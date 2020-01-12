@@ -34,7 +34,7 @@ function shellCommand($stringCommand)
 }
 //$cmd    = shellCommand('help'); // for debug
 $lastString = exec('help', $output, $errorCode);
-//var_dump($output);
+var_dump($output);
 
 $input  = $_GET;
 //var_dump($input);
