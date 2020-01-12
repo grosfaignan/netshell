@@ -33,11 +33,14 @@ function shellCommand($stringCommand)
 	return $cleanReturn;
 }
 //$cmd    = shellCommand('help'); // for debug
+$lastString = exec('help', $output, $errorCode);
+//var_dump($output);
 
 $input  = $_GET;
-var_dump($input);
-$cmd    = shellcommand($input['cmd']);
-$parsed = parseStdout($cmd);
-display($parsed);
+//var_dump($input);
+//$cmd    = shellcommand($input['cmd']);
+//$parsed = parseStdout($cmd);
+// var_dump($parsed);
+// display($parsed);
 
 ?>
