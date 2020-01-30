@@ -15,7 +15,7 @@ input.addEventListener("keyup", function(event) {
 
 function getSrc()
 {
-    document.getElementById('shellFrame').src ="shell.php?cmd=" + document.getElementById('cmd').value + "&regex="+ document.getElementById('regex').value;;
+    document.getElementById('shellFrame').src ="shellHome.php?cmd=" + document.getElementById('cmd').value + "&regex="+ document.getElementById('regex').value;;
     
 }
 

@@ -1,33 +1,53 @@
-body{
-    width: 100%;
-
+@media screen and (min-width: 980px) {
+  body {
+    margin: 0%;
+    padding: 0%;
+    
+  }
+  .body {
+    width: 850px; /*on definit la largeur de l'ensemble pour qu'elle corresponde au cadre dans lequel elle sera intégréer */
+    display: flex; /*on definit la propriété flex pour beneficier de cette composante sur l'esemble de la page */
+    flex-direction: column;
+    background-image: url(wallpaper_www.wallpaperhi.com_28.jpg);
+    background-attachment: fixed;
+    color: white;
+  }
+  .header {
+    width: inherit; /*ont definit la largeur du block a celle du conteneur parent*/
+    display: inherit; /*idem pour la valeur de display qui nous permet de recuperer l'element flex */
+    position: fixed; /*ont ajuste la position a fixed pour que l'element reste visible*/
+    height: 50px;
+  }
+  .header > .c1 {
+    background-color: rgba(0, 58, 26);
+  }
+  .header > .c2 {
+    background-color: rgb(
+      39,
+      61,
+      189
+    ); /*la couleur de fond de la partie fixe */
+  }
+  .content {
+    width: inherit; /*ont definit la largeur du block a celle du conteneur parent*/
+    display: inherit; /*idem pour la valeur de display qui nous permet de recuperer l'element flex */
+    margin-top: -46px;
+  }
+  .c1 {
+    width: 5%; /*ont definit la largeur de la première colonne*/
+    flex: none;
+    background-color: rgba(0, 58, 26, 0.288); /*puis l'arrière plans*/
+    text-align: center; /*puis l'alignement du texte*/
+    border-right: 1px solid white; /*puis la bordure*/
+  }
+  .c2 {
+    width: 95%; /*idem que .c1*/
+    text-align: justify;
+    margin-left: 1%; /*avec en plus une marge et un padding*/
+    border-left: 1px solid white;
+    padding-left: 3%;
+  }
+  .data{
+    text-align: inherit;
+  }
 }
-input#ok
-{
-  width: 100px;
-}
-
-
-div#c1 {
-  float: left;
-  width: 30px;
-  /* margin-left: 10px; */
-  background: rgb(47, 110, 97);
-  border-right: 1px solid #EBEBEB;
-}
-div#c2{
-    float: left;
-    width: 1500 px;
-    /* text-align: left; */
-    color: rgb(239, 242, 245);
-    border-left: 1px solid #EBEBEB;
-    margin-left: 10px;
-    background-image: url("wallpaper_www.wallpaperhi.com_28.jpg");
-    /* background-color: rgb(0, 0, 0) ; */
-    background-attachment:fixed;
-    margin-left: 20px;
-    margin-right: 20px;
-    word-wrap:break-word;
-    overflow:auto;
-}
-

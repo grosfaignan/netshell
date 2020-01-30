@@ -4,37 +4,28 @@
 <head>
     <meta charset="utf-8">
     <title>Titre de la page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shell.css">
 
 </head>
 
 <body>
-    <table>
+    <div class="body">
+        <div class="headers">
+            <div class="banner">
 
-
-
-        <p>
-            <input type="text" name="cmd" id="cmd" placeholder="Entrez votre commande ">
-            <input type="submit" id="ok" value="OK" onClick='getSrc();'>
-        </p>
-        <p class="enterCommand">
-
-
-
-
-            <input type="text" name="regex" id="regex" placeholder="Entrez votre regex ">
-            <button type="submit" class="button" id="ok" type="button" onclick='getSrc();'><img
-                    src="enter-10.png"></img></button>
-            <input type="submit" id="ok" value="OK" onClick='getSrc();'>
-
-
-        </p>
-    </table>
-    <iframe id="shellFrame" width="1024" height="800" src="shell.php?cmd="></iframe>
-    <!-- -->
-    <script src="script2.js"></script>
-
-
+            </div>
+            <div class="input-form">
+                <input type="text" class="data" name="cmd" id="cmd" placeholder="Entrez votre commande ">
+                <input type="text" class="data" name="regex" id="regex" placeholder="Entrez votre regex ">
+                <button type="submit" class="button" id="ok" type="button" onclick='getSrc();'>
+                </button>
+            </div>
+        </div>
+        <div class="output">
+            <iframe id="shellFrame"  src="shellHome.php?cmd="></iframe>
+        </div>
+    </div>
 </body>
+<script src="script.js"></script>
 
 </html>
